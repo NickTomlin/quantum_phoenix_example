@@ -23,7 +23,12 @@ config :logger, :console,
   metadata: [:request_id]
 
 config :quantum_phoenix, QuantumPhoenix.Scheduler,
-  jobs: []
+  jobs: [
+    phoenix_job: [
+      schedule: "*/2 * * * *",
+      task: {QuantumPhoenix.Task, :work, []},
+    ]
+  ]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
