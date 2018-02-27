@@ -1,6 +1,6 @@
 # QuantumPhoenix
 
-An example integrating [quantum](https://github.com/c-rack/quantum-elixir) into a phoenix application
+An example integrating [quantum](https://github.com/c-rack/quantum-elixir) into a phoenix application. A companion to this [blog post](https://nick-tomlin.com/2018/02/26/cron-in-elixir-with-quantum/).
 
 To start:
 
